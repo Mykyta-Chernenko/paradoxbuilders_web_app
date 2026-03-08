@@ -1,0 +1,164 @@
+{
+  "seo": {
+    "title": "App - Your Platform",
+    "description": "Welcome to our platform. Get started today.",
+    "keywords": "platform, saas, productivity"
+  },
+  "auth": {
+    "appName": "App",
+    "login": "Log In",
+    "signup": "Sign Up",
+    "name": "Name",
+    "namePlaceholder": "Your full name",
+    "nameRequired": "Name is required",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "newPassword": "New Password",
+    "confirmNewPassword": "Confirm New Password",
+    "forgotPassword": "Forgot Password",
+    "forgotPasswordQuestion": "Forgot your password?",
+    "resetPassword": "Reset Password",
+    "createAccount": "Create Account",
+    "alreadyHaveAccount": "Already have an account?",
+    "dontHaveAccount": "Don't have an account?",
+    "backToLogin": "Back to Log In",
+    "loading": "Loading...",
+    "showPassword": "Show password",
+    "hidePassword": "Hide password",
+    "continueWithGoogle": "Continue with Google",
+    "orContinueWith": "Or continue with email",
+    "passwordsDontMatch": "Passwords don't match",
+    "passwordMinLength": "Password must be at least 6 characters",
+    "emailRequired": "Email is required",
+    "accountAlreadyExists": "An account with this email already exists",
+    "invalidEmail": "Invalid email address",
+    "signUpFailed": "Failed to sign up. Please try again.",
+    "loginFailed": "Invalid email or password",
+    "authenticationFailed": "Authentication failed. Please try again.",
+    "sendResetLink": "Send Reset Link",
+    "resetPasswordEmailSent": "Check Your Email",
+    "resetPasswordEmailSentDescription": "We've sent a password reset link to your email. Click the link to reset your password.",
+    "forgotPasswordDescription": "Enter your email address and we'll send you a link to reset your password.",
+    "resetPasswordDescription": "Enter your new password below.",
+    "resetPasswordFailed": "Failed to send reset link. Please try again.",
+    "passwordUpdateFailed": "Failed to update password. Please try again.",
+    "passwordUpdatedSuccessfully": "Password updated successfully",
+    "invalidResetPasswordLink": "Invalid Reset Link",
+    "resetLinkExpired": "Link Expired",
+    "resetLinkExpiredDescription": "This password reset link has expired. Please request a new one.",
+    "requestNewLink": "Request New Link",
+    "updatePassword": "Update Password",
+    "loginDescription": "Sign in to your account to continue",
+    "loginDescriptionPricing": "Sign in to your account to view pricing and plans",
+    "signUpDescription": "Create an account to get started",
+    "signUpDescriptionPricing": "Create an account to view pricing and plans",
+    "agreeToTerms": "I agree to the",
+    "termsOfService": "Terms of Service",
+    "and": "and",
+    "privacyPolicy": "Privacy Policy",
+    "mustAgreeToTerms": "You must agree to the Terms of Service and Privacy Policy",
+    "invalidCredentials": "Invalid email or password. Please try again.",
+    "userNotFound": "No account found with this email address.",
+    "invalidPasswordFormat": "Password must be at least 6 characters long.",
+    "weakPassword": "Password is too weak. Please choose a stronger password.",
+    "emailAlreadyInUse": "This email is already registered. Please log in instead.",
+    "tooManyRequests": "Too many attempts. Please try again later.",
+    "networkError": "Network error. Please check your connection and try again.",
+    "emailFormatError": "Please enter a valid email address.",
+    "passwordMismatchError": "The passwords you entered don't match.",
+    "genericError": "Something went wrong. Please try again."
+  },
+  "survey": {
+    "contactSupport": {
+      "title": "Contact Support",
+      "subtitle": "We're here to help! Tell us how we can assist you.",
+      "emailNotice": "You can also reach us directly at:",
+      "messageLabel": "How can we help?",
+      "messagePlaceholder": "Describe your question or issue in detail..."
+    },
+    "reportBug": {
+      "title": "Report a Bug",
+      "subtitle": "Help us improve by reporting issues you've encountered.",
+      "categoryLabel": "What type of issue?",
+      "messageLabel": "Describe the bug",
+      "messagePlaceholder": "Tell us what happened, what you expected, and steps to reproduce...",
+      "categories": {
+        "ui": "UI/Design",
+        "generation": "AI Generation",
+        "export": "Export/Download",
+        "performance": "Performance",
+        "other": "Other"
+      }
+    },
+    "rateQuality": {
+      "title": "Rate Quality",
+      "subtitle": "Your feedback helps us improve.",
+      "ratingLabel": "How would you rate the quality?",
+      "feedbackLabel": "Additional feedback",
+      "messagePlaceholder": "What could be improved?"
+    },
+    "thankYou": {
+      "title": "Thank you!",
+      "message": "Your feedback has been submitted. We appreciate you taking the time to help us improve."
+    },
+    "common": {
+      "emailLabel": "Your email",
+      "emailPlaceholder": "email@example.com",
+      "optional": "optional",
+      "cancel": "Cancel",
+      "submit": "Submit",
+      "sending": "Sending...",
+      "genericError": "Something went wrong. Please try again."
+    }
+  },
+  "feedbackResponse": {
+    "title": "We Responded!",
+    "subtitle": "Our team has responded to your feedback",
+    "yourMessage": "Your message:",
+    "ourResponse": "Our response:",
+    "gotIt": "Got it, thanks!",
+    "closing": "Closing...",
+    "types": {
+      "contactSupport": "Support Request",
+      "reportBug": "Bug Report",
+      "rateQuality": "Quality Feedback",
+      "feedback": "Feedback"
+    }
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "description": "The page you're looking for doesn't exist or has been moved.",
+    "goHome": "Go to Home"
+  },
+  "progress": {
+    "loading": "Loading...",
+    "processing": "Processing...",
+    "saving": "Saving...",
+    "complete": "Complete",
+    "failed": "Failed",
+    "retry": "Retry"
+  },
+  "stats": {
+    "total": "Total",
+    "active": "Active",
+    "completed": "Completed",
+    "pending": "Pending"
+  },
+  "unsubscribe": {
+    "title": "Email Preferences",
+    "loading": "Loading your preferences...",
+    "subscribedTitle": "You're Currently Subscribed",
+    "subscribedDescription": "You're receiving marketing emails. Click below if you'd like to unsubscribe.",
+    "unsubscribeButton": "Unsubscribe",
+    "unsubscribing": "Unsubscribing...",
+    "unsubscribedTitle": "Successfully Unsubscribed",
+    "unsubscribedDescription": "You've been unsubscribed from our marketing emails. You'll still receive important account-related notifications.",
+    "resubscribeButton": "Subscribe Again",
+    "resubscribing": "Subscribing...",
+    "notFoundTitle": "User Not Found",
+    "notFoundDescription": "We couldn't find a user with this ID. The link may be invalid or expired.",
+    "errorTitle": "Something Went Wrong",
+    "errorDescription": "We encountered an error processing your request. Please try again later or contact support."
+  }
+}

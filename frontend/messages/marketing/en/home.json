@@ -1,0 +1,41 @@
+{
+  "home": {
+    "seo": {
+      "title": "Home",
+      "description": "Welcome to our platform. Get started today.",
+      "keywords": "platform, saas, productivity"
+    },
+    "hero": {
+      "title": "Build Something Amazing",
+      "subtitle": "The all-in-one platform to help you achieve more.",
+      "cta": "Get Started Free",
+      "ctaSecondary": "Learn More",
+      "subtext": "No credit card required"
+    },
+    "features": {
+      "title": "Why Choose Us",
+      "subtitle": "Everything you need in one place.",
+      "feature1Title": "Easy to Use",
+      "feature1Desc": "Get started in minutes with our intuitive interface.",
+      "feature2Title": "Powerful Tools",
+      "feature2Desc": "Professional-grade tools at your fingertips.",
+      "feature3Title": "Fast & Reliable",
+      "feature3Desc": "Built for speed and reliability you can count on."
+    },
+    "howItWorks": {
+      "title": "How It Works",
+      "subtitle": "Get started in three simple steps.",
+      "step1Title": "Sign Up",
+      "step1Desc": "Create your free account in seconds.",
+      "step2Title": "Set Up",
+      "step2Desc": "Configure your workspace to fit your needs.",
+      "step3Title": "Launch",
+      "step3Desc": "Start using the platform and see results."
+    },
+    "finalCta": {
+      "title": "Ready to Get Started?",
+      "subtitle": "Join thousands of users who are already achieving more.",
+      "cta": "Start Free Today"
+    }
+  }
+}

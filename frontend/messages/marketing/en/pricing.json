@@ -1,0 +1,152 @@
+{
+  "pricing": {
+    "currentPlan": "Current Plan",
+    "managePlan": "Manage Plan",
+    "upgrade": "Upgrade",
+    "downgrade": "Downgrade",
+    "hero": {
+      "title": "Simple, Transparent Pricing",
+      "titleCompact": "Choose Your Plan",
+      "subtitle": "Start free. Upgrade when you need more. Cancel anytime.",
+      "secureCheckout": "Secure checkout • Cancel anytime"
+    },
+    "tabs": {
+      "monthly": "Monthly",
+      "yearly": "Yearly",
+      "credits": "One-Time"
+    },
+    "free": {
+      "badge": "Free",
+      "price": "$0",
+      "period": "forever",
+      "creditsCount": "100",
+      "creditsLabel": "Credits",
+      "whatsIncluded": "What's Included",
+      "description": "Perfect for getting started",
+      "feature1": "Core features",
+      "feature2": "Basic support",
+      "feature3": "Community access",
+      "cta": "Start Free",
+      "subtext": "No credit card required"
+    },
+    "plus": {
+      "badge": "PLUS",
+      "priceMonthly": "$20",
+      "priceMonthlyDiscounted": "$12",
+      "periodMonthly": "/month",
+      "billedMonthly": "billed monthly",
+      "billedAnnually": "billed annually",
+      "description1": "Perfect for individuals",
+      "everythingInFree": "Everything in Free +",
+      "creditsFeature": "1,000 credits/month",
+      "pricePerMonth1": "$20",
+      "pricePerMonthYearly1": "$12",
+      "feature1": "Advanced features",
+      "feature2": "Priority support",
+      "feature3": "Export capabilities",
+      "cta": "Get Plus",
+      "ctaPrice": "$20/mo",
+      "ctaPriceYearly": "$144/yr",
+      "subtext": "7-day money-back guarantee"
+    },
+    "pro": {
+      "badge": "PRO",
+      "mostPopular": "Most Popular",
+      "mostPopularLabel": "MOST POPULAR",
+      "priceMonthly": "$50",
+      "priceMonthlyDiscounted": "$30",
+      "periodMonthly": "/month",
+      "billedMonthly": "billed monthly",
+      "billedAnnually": "billed annually",
+      "description1": "Perfect for professionals",
+      "everythingInPlus": "Everything in Plus +",
+      "creditsFeature": "5,000 credits/month",
+      "pricePerMonth1": "$50",
+      "pricePerMonthYearly1": "$30",
+      "feature1": "All advanced features",
+      "feature2": "Credits roll over",
+      "feature3": "Priority support (24h response)",
+      "feature4": "Priority queue",
+      "feature5": "Best AI models",
+      "cta": "Get Pro",
+      "ctaPrice": "$50/mo",
+      "ctaPriceYearly": "$360/yr",
+      "subtext": "7-day money-back guarantee"
+    },
+    "ultra": {
+      "badge": "ULTRA",
+      "pricePerMonth": "$200",
+      "pricePerMonthYearly": "$120",
+      "description1": "For teams & agencies",
+      "everythingInPro": "Everything in Pro +",
+      "creditsFeature": "25,000 credits/month",
+      "feature1": "Individual support line",
+      "feature2": "Onboarding call with founder",
+      "powerUsers": "POWER USERS",
+      "cta": "Get Ultra",
+      "subtext": "7-day money-back guarantee"
+    },
+    "creditsGridLabel": "Credits/mo",
+    "perMonthLabel": "/mo",
+    "billingNote": {
+      "yearly": "Billed yearly",
+      "monthly": "Billed monthly"
+    },
+    "credits": {
+      "title": "Need More Credits?",
+      "subtitle": "One-time purchase, no subscription required",
+      "badge": "ONE-TIME",
+      "price": "$50",
+      "amount": "2,000 credits",
+      "description": "Perfect for those who prefer pay-as-you-go",
+      "feature1": "No subscription needed",
+      "feature2": "Expire after 3 months",
+      "feature3": "Use for any feature",
+      "onceLabel": "one-time payment",
+      "creditsGridLabel": "Credits",
+      "cta": "Buy Credits",
+      "subtext": "Instant delivery"
+    },
+    "trustBadges": {
+      "securePayment": "Secure Payment",
+      "moneyBack": "7-Day Money Back",
+      "contentOwnership": "100% Content Ownership"
+    },
+    "faq": {
+      "title": "Pricing Questions? We've Got Answers.",
+      "q1": "Can I try it for free?",
+      "a1": "Yes! Get started for free with no credit card required. Upgrade when you need more features or credits.",
+      "q2": "Can I change plans anytime?",
+      "a2": "Absolutely. Upgrade, downgrade, or cancel anytime. If you upgrade mid-cycle, you'll be prorated. If you downgrade, the change takes effect at your next billing date.",
+      "q3": "Is there a yearly discount?",
+      "a3": "Yes! Pay yearly and save up to 40% compared to monthly billing.",
+      "q4": "Do I own what I create?",
+      "a4": "Yes, 100%. You have full ownership and commercial rights to everything you create.",
+      "q5": "What happens when I run out of credits?",
+      "a5": "Your account and all your work remain intact. You can upgrade anytime to get more credits. We never delete your content.",
+      "q6": "Do unused credits expire?",
+      "a6": "Pro credits roll over for up to 3 months. This gives you flexibility if you have a light month."
+    },
+    "finalCta": {
+      "title": "Ready to Get Started?",
+      "subtitle": "Join thousands of users already on the platform. Start free today.",
+      "ctaPrimary": "Start Free — No Card Required",
+      "ctaPrimarySubscriber": "Go to Dashboard",
+      "ctaSecondary": "Get Plus",
+      "feature1": "Start free",
+      "feature2": "7-day money-back guarantee",
+      "feature3": "Cancel anytime"
+    },
+    "purchaseSuccess": {
+      "title": "Welcome to Your Premium Account!",
+      "creditsAvailable": "Credits Available",
+      "howCreditsWork": "How Credits Work",
+      "howCreditsWorkDescription": "Credits are your currency for using premium features. Here's how to spend them:",
+      "freeActions": "Free Actions",
+      "freeActionsDescription": "Some actions are completely free - no credits needed!",
+      "freeActionsCost": "Free",
+      "continueButton": "Continue",
+      "redirectingToSignup": "Setting up your account..."
+    }
+  }
+}

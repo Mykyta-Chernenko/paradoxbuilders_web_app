@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx tsc:*)",
+      "Bash(npm *)",
+      "WebFetch",
+      "Read(*)",
+      "Edit(*)"
+    ],
+    "defaultMode": "bypassPermissions"
+  }
+}

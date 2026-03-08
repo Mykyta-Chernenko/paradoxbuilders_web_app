@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fdfcfb;
+  --foreground: #1f1915;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+}
+
+.btn-primary {
+  @apply bg-[#f96d4d] text-white font-semibold rounded-lg shadow-lg hover:bg-[#e6502f] transition-colors;
+}
+
+.btn-secondary {
+  @apply bg-white text-[#5c4a3a] font-medium rounded-lg border border-[#e8dfd4] hover:bg-[#fff5f3] hover:border-[#ffd5cc] hover:text-[#c23d20] transition-colors;
+}
+
+.underline-accent {
+  @apply relative inline-block;
+}
+
+.underline-accent::after {
+  content: '';
+  @apply absolute left-0 right-0 bottom-0 h-3 bg-[#fff5f3] -z-10;
+}

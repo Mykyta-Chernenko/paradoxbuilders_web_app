@@ -1,0 +1,47 @@
+{
+  "nav": {
+    "features": "Features",
+    "howItWorks": "How It Works",
+    "pricing": "Pricing",
+    "faq": "FAQ",
+    "logIn": "Log In",
+    "startFree": "Start Free",
+    "dashboard": "Dashboard",
+    "home": "Home",
+    "signOut": "Sign Out"
+  },
+  "footer": {
+    "description": "The AI-powered platform for getting things done.",
+    "productTitle": "Product",
+    "companyTitle": "Company",
+    "legalTitle": "Legal",
+    "support": "Support",
+    "affiliates": "Affiliates",
+    "termsOfService": "Terms of Service",
+    "privacyPolicy": "Privacy Policy",
+    "copyright": "© {year} All rights reserved."
+  },
+  "supportPage": {
+    "badge": "Customer Support",
+    "title": "How Can We Help?",
+    "description": "Have a question, feedback, or need assistance? We're here to help.",
+    "categoryLabel": "What can we help you with?",
+    "seo": {
+      "title": "Support",
+      "description": "Get help and support. Contact our team for questions, feedback, or technical assistance.",
+      "keywords": "support, help, contact, customer service"
+    }
+  },
+  "relatedPages": {
+    "title": "Explore More",
+    "subtitle": "Discover more about what we offer",
+    "learnMore": "Learn more"
+  },
+  "cta": {
+    "startFree": "Start Free",
+    "getStarted": "Get Started",
+    "learnMore": "Learn More",
+    "signUp": "Sign Up",
+    "logIn": "Log In"
+  }
+}

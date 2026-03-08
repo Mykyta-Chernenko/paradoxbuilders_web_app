@@ -1,0 +1,35 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@phosphor-icons/react": "^2.1.10",
+    "@revenuecat/purchases-js": "^1.22.1",
+    "@sentry/nextjs": "^10.32.1",
+    "@supabase/supabase-js": "^2.89.0",
+    "next": "16.1.6",
+    "next-intl": "^4.6.1",
+    "posthog-js": "^1.309.1",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "react-ga4": "^2.1.0",
+    "react-hot-toast": "^2.6.0",
+    "sonner": "^2.0.7"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^22",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.1.0",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
