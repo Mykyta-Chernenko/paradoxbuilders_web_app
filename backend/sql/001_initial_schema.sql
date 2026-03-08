@@ -11,7 +11,7 @@ create extension if not exists "uuid-ossp";
 
 -- User profile (basic user information)
 create table if not exists public.user_profile (
-  id uuid primary key default uuid_generate_v4(),
+  id uuid primary key default gen_random_uuid(),
   user_id uuid not null references auth.users(id) on delete cascade,
   name text,
   avatar_url text,
@@ -22,7 +22,7 @@ create table if not exists public.user_profile (
 
 -- User technical details (device info, email preferences, etc.)
 create table if not exists public.user_technical_details (
-  id uuid primary key default uuid_generate_v4(),
+  id uuid primary key default gen_random_uuid(),
   user_id uuid not null references auth.users(id) on delete cascade,
   email_opt_in boolean not null default true,
   purchase_email text,
@@ -37,7 +37,7 @@ create table if not exists public.user_technical_details (
 
 -- User premium (subscription and credits)
 create table if not exists public.user_premium (
-  id uuid primary key default uuid_generate_v4(),
+  id uuid primary key default gen_random_uuid(),
   user_id uuid not null references auth.users(id) on delete cascade,
   credits integer not null default 0,
   has_purchased boolean not null default false,
@@ -53,7 +53,7 @@ create table if not exists public.user_premium (
 
 -- User feedback
 create table if not exists public.user_feedback (
-  id uuid primary key default uuid_generate_v4(),
+  id uuid primary key default gen_random_uuid(),
   user_id uuid references auth.users(id) on delete set null,
   type text not null,
   message text not null,
@@ -68,7 +68,7 @@ create table if not exists public.user_feedback (
 
 -- User feedback response (admin replies to feedback)
 create table if not exists public.user_feedback_response (
-  id uuid primary key default uuid_generate_v4(),
+  id uuid primary key default gen_random_uuid(),
   feedback_id uuid not null references public.user_feedback(id) on delete cascade,
   responder_id uuid references auth.users(id) on delete set null,
   message text not null,
@@ -77,7 +77,7 @@ create table if not exists public.user_feedback_response (
 
 -- Feature flags
 create table if not exists public.feature_flags (
-  id uuid primary key default uuid_generate_v4(),
+  id uuid primary key default gen_random_uuid(),
   name text not null unique,
   enabled boolean not null default false,
   description text,
@@ -87,7 +87,7 @@ create table if not exists public.feature_flags (
 
 -- Email campaigns (track sent emails)
 create table if not exists public.email_campaigns (
-  id uuid primary key default uuid_generate_v4(),
+  id uuid primary key default gen_random_uuid(),
   user_id uuid not null references auth.users(id) on delete cascade,
   email_type text not null,
   email_subtype text,
@@ -97,7 +97,7 @@ create table if not exists public.email_campaigns (
 
 -- Scheduled credits (for yearly subscriptions)
 create table if not exists public.scheduled_credits (
-  id uuid primary key default uuid_generate_v4(),
+  id uuid primary key default gen_random_uuid(),
   user_id uuid not null references auth.users(id) on delete cascade,
   credit_amount integer not null,
   distribute_on timestamptz not null,
@@ -204,6 +204,32 @@ begin
   return coalesce(v_has_purchased, false);
 end;
 $$;
+
+-- ============================================================================
+-- Auto-create user_profile, user_technical_details, user_premium on signup
+-- ============================================================================
+
+CREATE OR REPLACE FUNCTION public.create_premium_and_profile()
+RETURNS TRIGGER AS $$
+BEGIN
+  INSERT INTO public.user_profile (user_id) VALUES (NEW.id) ON CONFLICT (user_id) DO NOTHING;
+  INSERT INTO public.user_technical_details (user_id) VALUES (NEW.id) ON CONFLICT (user_id) DO NOTHING;
+  INSERT INTO public.user_premium (user_id) VALUES (NEW.id) ON CONFLICT (user_id) DO NOTHING;
+  RETURN NEW;
+END;
+$$ LANGUAGE plpgsql SECURITY DEFINER;
+
+DO $$
+BEGIN
+  IF NOT EXISTS (
+    SELECT 1 FROM pg_trigger WHERE tgname = 'on_auth_user_created_profile_premium'
+  ) THEN
+    CREATE TRIGGER on_auth_user_created_profile_premium
+      AFTER INSERT ON auth.users
+      FOR EACH ROW
+      EXECUTE FUNCTION public.create_premium_and_profile();
+  END IF;
+END $$;
 
 -- ============================================================================
 -- Indexes
